@@ -1,0 +1,59 @@
+
+
+<!-- <form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Location</mat-label>
+    <input matInput placeholder="enter a city">
+  </mat-form-field>  
+</form> -->
+
+<div class="col-md-8">
+    <h3 [ngClass]="sunlight ? 'yellow-heading' : Rain ? 'blue-heading' : snow ? 'blue-heading': cloud ? 'blue-heading': 'title-heading' ">My weather</h3>
+  </div>
+  
+    <div class="location-field">
+      <form class="example-form"
+      formGroup="weatherSearchForm"
+     >
+        <mat-form-field class="example-full-width">
+          <mat-label class="lable-heading">Location</mat-label>
+          <input matInput placeholder="Enter a city" class="input-field" formControlName="location" #locationName>
+        </mat-form-field>
+      </form>
+      <button (click)="sendToApi()" class="set-button">set</button>
+    </div>
+    <mat-card>
+      <div *ngIf=" preview && !Rain && !cloud && !sunlight && !snow">
+        <img mat-card-image class="image-height" src="../../assets/images/Preview.svg" alt="" >
+      </div>
+        <div *ngIf="sunlight && !Rain && !cloud && !snow && !preview" class="container">
+          <img  mat-card-image class="image-height inline-img" src="../../assets/images/Clear.svg">
+          <div  class="celcius-alignment">
+          <h1  class="celcius">{{calculate | number:'1.0-0'}}°C</h1>
+          <h1 class="weather-condition">{{weatherCondition}}</h1>
+        </div>
+        </div>
+        <div *ngIf="!sunlight && Rain && !cloud && !snow  && !preview"  class="container">
+          <img  mat-card-image class="image-height inline-img" src="../../assets/images/Rain.svg">
+        <div  class="celcius-alignment">
+          <h1  class="celcius">{{calculate  | number:'1.0-0'}}°C</h1>
+          <h1 class="weather-condition">{{weatherCondition}}</h1>
+        </div>
+        </div>
+        <div *ngIf="!sunlight && !Rain && cloud && !snow  && !preview" class="container">
+          <img  mat-card-image class="image-height inline-img" src="../../assets/images/Clouds.svg">
+        <div  class="celcius-alignment">
+          <h1 class="celcius">{{calculate  | number:'1.0-0'}}°C</h1>
+          <h1 class="weather-condition">{{weatherCondition}}</h1>
+        </div>
+        </div>
+        <div *ngIf="!sunlight && !Rain && !cloud && snow  && !preview" class="container">
+          <img  mat-card-image class="image-height inline-img" src="../../assets/images/Snow.svg">
+        <div class="celcius-alignment">
+          <h1 class="celcius">{{calculate | number:'1.0-0'}}°C</h1>
+          <h1 class="weather-condition">{{weatherCondition}}</h1>
+        </div>
+        </div>
+    </mat-card>
+    <p>MY WEATHER</p>
+  

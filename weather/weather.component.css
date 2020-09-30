@@ -1,0 +1,138 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+.input-field {
+    margin-top: 5vh;
+    border-bottom: 1px solid darkgray;
+    width: 16.66vw;
+    margin-left: 10%;
+}
+.lable-heading {
+    font-size: 21px;
+    color: darkgrey;
+    font-family: monospace;
+}
+
+.yellow-heading {
+    background-color: rgb(185, 185, 49);
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: monospace;
+    font-weight: 500;
+    letter-spacing: 3px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-heading {
+    background-color: skyblue;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: monospace;
+    font-weight: 500;
+    letter-spacing: 3px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-heading {
+    background-color: darkgrey;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: monospace;
+    font-weight: 500;
+    letter-spacing: 3px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location-field {
+    margin-top: 8%;
+    margin-left: 35%;
+    display: flex;
+    align-items: center;
+    width: -4%;
+    /* margin-right: 44%; */
+    padding-right: 37%;
+}
+.set-button {
+    margin: 0;
+    position: absolute;
+    left: 52%;
+    color: darkgrey;
+    font-family: monospace;
+    font-size: 14px
+}
+mat-card{
+background:lightgray;
+    margin-top: 5vh;
+    margin-left: 569px;
+    width: 25%;
+    margin-right: 600px;
+    height: 200px;
+    border-radius: 20px;
+    /* box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1); */
+}
+p{
+    margin-left: 540px;
+    margin-top: 37px;;
+font-family: monospace;
+font-size: larger;
+color: #a78383;
+}
+h3{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+mat-card-image{
+    height: 50px;
+    width: 20%;
+}
+
+.image-height{
+    height: 200px;
+    /* width: 100%; */
+    object-fit: fill;
+}
+
+.inline-img {
+    height: 150px;
+    margin-top: 4vh !important;
+    margin-left: 1vh;
+    width: 187px;
+}
+
+.container {
+    display: flex;
+}
+
+.weather-condition {
+    font-family: monospace;
+    font-size: 35px;
+    margin-left: 22px;
+    letter-spacing: 2px;
+}
+
+.celcius {
+    font-family: monospace;
+    font-size: 50px;
+    margin: 0;
+}
+
+.celcius-alignment {
+    margin-left: 23%;
+}
